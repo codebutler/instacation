@@ -1,0 +1,281 @@
+body {
+  background: url('../img/bg.png');
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url('../img/header_bg.png');
+  padding: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+h1 {
+  background: url('../img/logo.png') no-repeat;
+  width: 265px;
+  height: 88px;
+  margin: 0 auto;
+}
+
+h1 span {
+  display: none;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.2);
+  width: 800px;
+  margin: 50px auto 0 auto;
+  padding: 15px;
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h2 span {
+  display: none;
+}
+
+.main .col {
+  float: left;
+}
+
+.enter-address {
+  margin-bottom: 30px;
+}
+
+.enter-address h2 {
+  background: url('../img/enter-address.png') no-repeat;
+  width: 164px;
+  height: 24px;
+}
+
+.enter-address input {
+  border: 0;
+  margin: 0;
+  padding: 20px 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: black;
+}
+
+.pick-landmark h2 {
+  background: url('../img/pick-landmark.png') no-repeat;
+  width: 202px;
+  height: 32px;
+}
+
+.drag-pegman {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.drag-pegman h2 {
+  background: url('../img/drag-pegman.png') no-repeat;
+  width: 222px;
+  height: 39px;
+}
+
+.places-list {
+  padding: 20px;
+  margin: -20px;
+}
+
+.places-list ul {
+  padding: 20px;
+  margin: -20px;
+  overflow: hidden;
+}
+
+.places-list ul:last-child {
+  margin-top: -40px;
+}
+
+.places-list ul li {
+  list-style: none;
+  display: block;
+  float: left;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: white;
+  color: black;
+  border-left: 1px solid #CECACD;
+  border-right: 1px solid #CECACD;
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
+  width: 170px;
+}
+
+.places-list li:last-child {
+  margin-right: 0;
+}
+
+.places-list li {
+   -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.places-list li:hover {
+    -webkit-transform: rotate(-2deg) scale(1.09) translateZ(1000px);
+    -moz-transform: rotate(-10deg); 
+    -o-transform: rotate(-10deg);
+}
+
+.places-list ul:last-child li {
+  margin-bottom: 0;
+}
+
+.places-list li a {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.places-list li a div {
+  margin-bottom: 10px;
+  background: #ddd;
+  width: 100%;
+  height: 140px;
+}
+
+.map-modal {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.map-modal-content, .pano-modal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map-modal .modal-body {
+  overflow: hidden;
+  /*height: 530px;*/
+  height: 584px;
+  max-height: 584px;
+}
+
+.modal-body {
+  width: 560px !important;
+  margin: 0 auto;
+}
+
+.map-canvas {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+}
+
+.pano {
+  position: absolute;
+  top: 59px;
+  width: 262px;
+  height: 263px;
+}
+
+.phone {
+  margin: 0 auto;
+  background: url('../img/phone.png') no-repeat;
+  width: 300px;
+  height: 584px;
+}
+
+.phone .screen {
+  width: 320px;
+  height: 480px;
+  position: relative;
+  top: 96px;
+  left: 20px;
+}
+
+.phone .screen-camera {
+  background: url('../img/screen-camera.png') no-repeat;
+}
+
+.phone .screen-photo .photo {
+  background: gray;
+  width: 262px;
+  height: 264px;
+  top: 37px;
+  position: absolute;
+}
+
+.phone .screen-photo .bg {
+  position: absolute;
+  top: 0;
+  background: url('../img/screen-photo.png') no-repeat;
+  width: inherit;
+  height: inherit;
+}
+
+.camera-button {
+  top: 354px;
+  position: relative;
+  width: 81px;
+  height: 33px;
+  left: 90px;
+  cursor: pointer;
+}
+
+.camera-flash {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: white;
+  z-index: 10000;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 30px;
+}
+
+footer div {
+  padding: 15px;
+  width: 800px;
+  margin: 0px auto;
+  font-family: 'proxima-nova', "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #444;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+footer p {
+  padding: 10px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}

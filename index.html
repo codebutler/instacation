@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+    <script type="text/javascript" src="js/jquery.getimagedata.js"></script>
+    <script type="text/javascript" src="js/filtrr2-0.5.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="js/streetgram.js"></script>
+    <title>streetgram</title>
+  </head>
+  <body>
+    <header>
+      <h1><span>streetgram</h1></span>
+      <p class="testimonial">"Forget expensive airfare!” &mdash; @superhipman</p>
+    </header>
+    <section class="main">
+      <div class="enter-address">
+        <h2><span>Enter Address</span></h2>
+        <input id="address-input" type="text" size="50" placeholder="123 Fake St.">
+      </div>
+
+      <div class="pick-landmark">
+        <h2><span>Pick a Landmark</span></h2>
+        <div class="places-list">
+          <ul>
+            <li><a href="#"><div></div>Space Needle</a></li>
+            <li><a href="#"><div></div>Eifel Tower</a></li>
+            <li><a href="#"><div></div>Stonehenge</a></li>
+            <li><a href="#"><div></div>Leaning Tower</a></li>
+          </ul>
+          <ul>
+            <li><a href="#"><div></div>Leaning Tower</a></li>
+            <li><a href="#"><div></div>Leaning Tower</a></li>
+            <li><a href="#"><div></div>Leaning Tower</a></li>
+            <li><a href="#"><div></div>Leaning Tower</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="map-modal modal hide" id="map-modal">
+      <div class="modal-body">
+        <div class="map-modal-content">
+          <img src="img/drag-pegman.png" alt="Drag pegman">
+          <div id="map-canvas" class="map-canvas"></div>
+        </div>
+        <div class="pano-modal-content invisible">
+          <div class="phone">
+            <div class="screen screen-camera">
+              <div id="pano" class="pano"></div>
+              <div id="camera-button" class="camera-button"></div>
+            </div>
+            <div class="screen screen-photo">
+              <canvas id="photo" class="photo" width="262" height="264"></canvas>
+              <div class="bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="camera-flash" class="camera-flash hide"></div>
+
+    <footer>
+      <div>
+        <a href="http://hipsterware.com"><img src="http://hipsterware.com/img/hipster-glasses-mustache-x-small.png" width="16"> THIS IS HIPSTERWARE.</a>
+      </div>
+    </footer>
+  </body>
+</html>
